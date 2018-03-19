@@ -1,0 +1,25 @@
+
+<div class="container">
+  <h1>BMI Calculator</h1>
+  <br>
+  <div class="row">
+    <div class="col">
+      <label for="">Gewicht in kg: </label>
+      <div class="md-form">
+        <input placeholder="Gewicht" type="text" id="" class="form-control" [(ngModel)]="gewicht"> 
+      </div>
+    </div>
+    
+    <div class="col">
+      <label for="">Lengte in cm: </label>
+      <div class="md-form">
+        <input placeholder="Lengte" type="text" id="" class="form-control" [(ngModel)]="lengte"> 
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-default" (click)="calcBmi()">Bereken</button>
+  <br>
+  <br>
+  <h1>{{bmiIndex}}</h1>
+  <img src="http://www.therapypoints.com/wp-content/uploads/2016/08/bmi.jpg" alt="BMI image">
+</div>
